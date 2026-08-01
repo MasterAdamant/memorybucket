@@ -1,0 +1,27 @@
+# Memory Bucket
+
+A C++ memory management framework for efficient allocation and manipulation of memory blocks.
+
+## Overview
+
+Memory Bucket provides low-level memory control through a hierarchical structure of `MemoryCell`, `MemoryBlock`, and `MemoryBucket` classes. It enables fine-grained management of dynamically allocated memory with support for serialization and deserialization of arbitrary types.
+
+## Features
+
+- **MemoryCell**: Basic unit of memory with byte-level access
+- **MemoryBlock**: Container for managing multiple memory cells
+- **Type Serialization**: Convert arbitrary types to/from byte representation across memory cells
+- **Move Semantics**: Efficient memory ownership transfer
+- **Copy Support**: Deep copying of memory structures
+
+## Usage
+
+### Basic Example
+```c++
+using namespace MD_MemoryBucket;
+
+...
+
+MemoryVariable<int> variable = MemoryBucket::Allocate<int>();
+```
+As you can see here, value is being allocated inside of `MemoryBucket` and returned value is 
