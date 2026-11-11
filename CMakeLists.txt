@@ -4,7 +4,7 @@ project(MemoryBucket VERSION 1.0)
 
 set(CXX_STANDARD 11)
 set(SOURCES
-        tests/cell_general.cpp
+        tests/fragment_general.cpp
         src/cell/cell.cpp
         include/fragment/fragment.h
         src/fragment/fragment.cpp
